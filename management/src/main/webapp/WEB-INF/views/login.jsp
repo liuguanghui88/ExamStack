@@ -36,11 +36,9 @@ String basePath = request.getScheme() + "://"
 				<div class="row">
 					<div class="col-xs-5">
 						<div class="logo">
-							<h1><a href="#">网站管理系统</a></h1>
+							<h1><a href="#">瀚唐考试系统</a></h1>
 							<div class="hmeta">
-								专注互联网在线考试解决方案
-							</div>
-						</div>
+								学IT 好工作 就读淮安北大青鸟！</div>		</div>
 					</div>
 					<div class="col-xs-7" id="login-info">
 						<c:choose>
@@ -53,7 +51,7 @@ String basePath = request.getScheme() + "://"
 								</div>
 							</c:when>
 							<c:otherwise>
-							<!-- 	<a class="btn btn-primary" href="user-register">用户注册</a>
+							<!-- 	<!--<a class="btn btn-primary" href="user-register">用户注册</a>-->
 								<a class="btn btn-success" href="user-login-page">登录</a> -->
 							</c:otherwise>
 						</c:choose>
@@ -83,7 +81,7 @@ String basePath = request.getScheme() + "://"
 					</div>
 					<div class="col-md-5">
 						<div class="lrform">
-							<h5>登陆网站管理系统</h5>
+							<h5>登陆瀚唐考试系统</h5>
 							<div class="form">
 								<!-- Login form (not working)-->
 								<form class="form-horizontal" action="j_spring_security_check" method="post">
@@ -132,7 +130,7 @@ String basePath = request.getScheme() + "://"
 					<div class="col-md-12">
 						<div class="copy">
 							<p>
-								ExamStack Copyright © <a href="http://www.examstack.com/" target="_blank">ExamStack</a> - <a href="." target="_blank">主页</a> | <a href="http://www.examstack.com/" target="_blank">关于我们</a> | <a href="http://www.examstack.com/" target="_blank">FAQ</a> | <a href="http://www.examstack.com/" target="_blank">联系我们</a>
+								淮安瀚唐信息技术有限公司（北大青鸟淮安瀚唐校区）版权所有　 
 							</p>
 						</div>
 					</div>

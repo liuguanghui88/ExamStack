@@ -105,7 +105,7 @@ String basePath = request.getScheme() + "://"
 								</div>
 							</c:when>
 							<c:otherwise>
-								<a class="btn btn-primary" href="user-register">用户注册</a>
+								<!--<a class="btn btn-primary" href="user-register">用户注册</a>-->
 								<a class="btn btn-success" href="user-login-page">登录</a>
 							</c:otherwise>
 						</c:choose>
@@ -145,16 +145,16 @@ String basePath = request.getScheme() + "://"
 		<!-- Navigation bar ends -->
 
 		<!-- Slider starts -->
-
-		<div class="full-slider">
-			<!-- Slider (Flex Slider) -->
+	<!-- 注释与北大青鸟无关的 -->
+	<!-- 	<div class="full-slider">
+			Slider (Flex Slider)
 
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="flexslider">
 							<div class="flex-caption">
-								<!-- Left column -->
+								Left column
 								<div class="col-l">
 									<p style="text-indent:2em;">
 										ExamStack是国内首款一款基于JAVA与MYSQL开发的网络考试系统。它可以稳定、顺畅的运行在Windows与Linux平台上。您可以通过它快捷方便的创建试题和题库，发布试卷，组织考试，系统自动批改。高度的可配置性和灵活性使得它可以被应用于很多领域。
@@ -163,17 +163,17 @@ String basePath = request.getScheme() + "://"
 										软件采用GPL协议，完全开放且免费，并且有固定的开发团队提供技术支持
 									</p>
 								</div>
-								<!-- Right column -->
+								Right column
 								<div class="col-r">
 
-									<!-- Use the class "flex-back" to add background inside flex slider -->
+									Use the class "flex-back" to add background inside flex slider
 
-									<!-- <img alt="" src="../resources/images/ad.png"> -->
+									<img alt="" src="../resources/images/ad.png">
 									<p>
 										如果您对软件有任何反馈和建议，加入我们的QQ群152258375一起讨论吧
 									</p>
 
-									<!-- Button -->
+									Button
 									<a class="btn btn-default btn-cta" href="user-register"><i class="fa fa-arrow-circle-down"></i> 马上加入我们吧</a>
 
 								</div>
@@ -182,7 +182,7 @@ String basePath = request.getScheme() + "://"
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="content" style="padding:30px 0 0 0;">
 			<div class="container">
 				<div class="row">
@@ -219,7 +219,7 @@ String basePath = request.getScheme() + "://"
 				</div>
 			</div>
 		</div>
-		<div class="content" style="padding:30px 0 100px 0;background-color: rgb(246, 249, 250);">
+	<!-- 	<div class="content" style="padding:30px 0 100px 0;background-color: rgb(246, 249, 250);">
 			<div class="container">
 				<div style="margin-bottom: 10px;">
 					<h3>专业领域</h3>
@@ -306,7 +306,7 @@ String basePath = request.getScheme() + "://"
 
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="content" style="padding:30px 0 100px 0;">
 			<c:if test="${fn:length(newsList) > 0 }">
 				<div class="container">
@@ -320,7 +320,7 @@ String basePath = request.getScheme() + "://"
 									<li class="news-list-item clearfix">
 										<a class="home-link-anchor" href="news/${newsList[0].newsId }" target="_blank">
 										<div class="news-list-thumbnail">
-											<img src="http://www.examstack.com/resources/images/index/index3.jpg">
+											<img src="resources/images/news.png">
 										</div>
 										<div class="news-list-content">
 											<div class="news-list-title">
@@ -337,7 +337,7 @@ String basePath = request.getScheme() + "://"
 									<li class="news-list-item clearfix">
 										<a class="home-link-anchor" href="news/${newsList[0].newsId }" target="_blank">
 										<div class="news-list-thumbnail">
-											<img src="http://www.examstack.com/resources/images/index/index3.jpg">
+											<img src="resources/images/news.png">
 										</div>
 										<div class="news-list-content">
 											<div class="news-list-title"">
@@ -352,7 +352,7 @@ String basePath = request.getScheme() + "://"
 									<li class="news-list-item clearfix">
 										<a class="home-link-anchor" href="news/${newsList[1].newsId }">
 										<div class="news-list-thumbnail">
-											<img src="http://www.examstack.com/resources/images/index/index2.jpg">
+											<img src="resources/images/news.png">
 										</div>
 										<div class="news-list-content">
 											<div class="news-list-title">
@@ -380,7 +380,8 @@ String basePath = request.getScheme() + "://"
 					<div class="col-md-12">
 						<div class="copy">
 							<p>
-								ExamStack Copyright © <a href="http://www.examstack.com/" target="_blank">ExamStack</a> - <a href="." target="_blank">主页</a> | <a href="http://www.examstack.com/" target="_blank">关于我们</a> | <a href="http://www.examstack.com/" target="_blank">FAQ</a> | <a href="http://www.examstack.com/" target="_blank">联系我们</a>
+								<!-- 淮安瀚唐信息技术有限公司（北大青鸟淮安瀚唐校区）版权所有　  -->
+								淮安瀚唐信息技术有限公司（北大青鸟淮安瀚唐校区）版权所有　 
 							</p>
 						</div>
 					</div>
@@ -448,6 +449,6 @@ String basePath = request.getScheme() + "://"
 			});
 		}
 		</script>
-		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1252987997'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1252987997' type='text/javascript'%3E%3C/script%3E"));</script>
+		<!-- <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1252987997'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1252987997' type='text/javascript'%3E%3C/script%3E"));</script> -->
 	</body>
 </html>

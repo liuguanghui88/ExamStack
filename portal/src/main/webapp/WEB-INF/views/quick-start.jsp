@@ -50,7 +50,7 @@ String basePath = request.getScheme() + "://"
 								</div>
 							</c:when>
 							<c:otherwise>
-								<a class="btn btn-primary" href="user-register">用户注册</a>
+								<!--<a class="btn btn-primary" href="user-register">用户注册</a>-->
 								<a class="btn btn-success" href="user-login-page">登录</a>
 							</c:otherwise>
 						</c:choose>
@@ -121,7 +121,7 @@ String basePath = request.getScheme() + "://"
 										</div>
 									</div>
 								</form>
-								没有账号? <a href="user-register">注册</a>
+								没有账号，请联系管理人员<!-- <a href="user-register">注册</a>-->
 							</div>
 						</div>
 
@@ -137,7 +137,7 @@ String basePath = request.getScheme() + "://"
 					<div class="col-md-12">
 						<div class="copy">
 							<p>
-								ExamStack Copyright © <a href="http://www.examstack.com/" target="_blank">ExamStack</a> - <a href="." target="_blank">主页</a> | <a href="http://www.examstack.com/" target="_blank">关于我们</a> | <a href="http://www.examstack.com/" target="_blank">FAQ</a> | <a href="http://www.examstack.com/" target="_blank">联系我们</a>
+								淮安瀚唐信息技术有限公司（北大青鸟淮安瀚唐校区）版权所有　 
 							</p>
 						</div>
 					</div>
