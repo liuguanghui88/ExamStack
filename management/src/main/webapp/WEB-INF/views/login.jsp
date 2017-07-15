@@ -81,7 +81,7 @@ String basePath = request.getScheme() + "://"
 					</div>
 					<div class="col-md-5">
 						<div class="lrform">
-							<h5>登陆瀚唐考试系统</h5>
+							<h5>登录瀚唐考试系统</h5>
 							<div class="form">
 								<!-- Login form (not working)-->
 								<form class="form-horizontal" action="j_spring_security_check" method="post">
@@ -104,7 +104,7 @@ String basePath = request.getScheme() + "://"
 										<!-- Buttons -->
 										<div class="col-md-9 col-md-offset-3">
 											<button type="submit" class="btn btn-default">
-												登陆
+												登录
 											</button>
 											<button type="reset" class="btn btn-default">
 												取消
@@ -114,7 +114,7 @@ String basePath = request.getScheme() + "://"
 									</div>
 								</form>
 								<i class="fa fa-info"></i> 
-								通过教师/管理员账号登陆系统
+								通过教师/管理员账号登录系统
 							</div>
 						</div>
 

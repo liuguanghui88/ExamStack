@@ -95,7 +95,7 @@ String basePath = request.getScheme() + "://"
 				<p class="big grey">
 					您的账号为<span>${username}</span>
 				</p>
-				<a href="user-login-page" class="btn btn-success"><i class="fa fa-sign-in"></i> 登陆系统</a>
+				<a href="user-login-page" class="btn btn-success"><i class="fa fa-sign-in"></i> 登录系统</a>
 				<hr>
 				<div class="link-list">
 					<h5>您可以选择访问其他页面</h5>
