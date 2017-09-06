@@ -222,7 +222,7 @@ public class QuestionServiceImpl implements QuestionService {
 	public void uploadQuestions(String filePath, String username, int fieldId) {
 		// TODO Auto-generated method stub
 		//String strPath = ",webapps,files,question," + username + ",tmp";
-		String strPath = ",webapps,files,question," + username;
+		String strPath = ",webapps,files,training," + username;
 		
 		filePath = System.getProperty("catalina.base") + strPath.replace(',', File.separatorChar) + File.separatorChar
 				+ filePath;
