@@ -53,7 +53,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 							</c:when>
 							<c:otherwise>
-								<!--<a class="btn btn-primary" href="user-register">用户注册</a>-->
+								<a class="btn btn-primary" href="user-register">用户注册</a>
 								<a class="btn btn-success" href="user-login-page">登录</a>
 							</c:otherwise>
 						</c:choose>
