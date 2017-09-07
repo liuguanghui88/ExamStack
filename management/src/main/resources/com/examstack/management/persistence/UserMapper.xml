@@ -40,6 +40,10 @@
 		<foreach collection="array" open="(" close=")" index="index" item="item" separator=",">
 			#{item}
 		</foreach>
+		or a.user_id in
+		<foreach collection="array" open="(" close=")" index="index" item="item" separator=",">
+			#{item}	
+		</foreach>
 		)
 		<if test="roleId != -1">
 			and c.id = #{roleId}
