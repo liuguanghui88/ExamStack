@@ -770,7 +770,7 @@ public class QuestionAdapter {
 					.append(questionQueryResult.getQuestionId()).append("</span>");
 			sb.append("</div>");
 			sb.append("<form class=\"question-body\">");
-			sb.append("<p class=\"question-body-text\">").append(questionContent.getTitle());
+			sb.append("<div class=\"question-body-text\">").append(questionContent.getTitle());
 			if (questionContent.getTitleImg() != null)
 				if (!questionContent.getTitleImg().trim().equals(""))
 					sb.append(
@@ -778,7 +778,7 @@ public class QuestionAdapter {
 							.append(baseUrl)
 							.append(questionContent.getTitleImg())
 							.append("\" />");
-			sb.append("</p>");
+			sb.append("</div>");
 			Iterator<String> it1 = questionContent.getChoiceList().keySet()
 					.iterator();
 			sb.append("<ul class=\"question-opt-list\">");
