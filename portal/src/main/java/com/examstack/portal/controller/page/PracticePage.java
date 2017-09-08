@@ -25,6 +25,7 @@ import com.examstack.common.domain.question.KnowledgePoint;
 import com.examstack.common.domain.question.QuestionQueryResult;
 import com.examstack.common.domain.question.QuestionStatistic;
 import com.examstack.common.domain.question.QuestionType;
+import com.examstack.common.util.ConfigUtil;
 import com.examstack.common.util.QuestionAdapter;
 import com.examstack.portal.security.UserInfo;
 import com.examstack.portal.service.QuestionHistoryService;
@@ -204,7 +205,11 @@ public class PracticePage {
 	
 	@RequestMapping(value = "/student/practice-list", method = RequestMethod.GET)
 	public String practiceListPage(Model model, HttpServletRequest request, @RequestParam(value="fieldId",required=false,defaultValue="0") int fieldId){
-		
+		String isExam = ConfigUtil.getConfig("isExam");
+		if("true".equals(isExam.trim())){
+			model.addAttribute("errorMsg", "如需联系请联系教员！");
+			return "error";
+		}
 		UserInfo userInfo = (UserInfo) SecurityContextHolder.getContext()
 				.getAuthentication().getPrincipal();
 		List<Field> fieldList = questionService.getAllField(null);
